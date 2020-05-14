@@ -8,23 +8,41 @@
 //如果是单页面
 let entry = [
   {
-    filename: 'index', //文件名，
-    title: '后台管理系统', // 标题
-    src: './view/index/index.jsx' //脚本路径
+    filename: "index", //文件名，
+    title: "后台管理系统", // 标题
+    src: "./view/index/index.jsx", //脚本路径
   },
-  
+
   {
-    filename: 'home', //文件名，
-    title: '后台管理系统-主页', // 标题
-    src: './view/home/home.jsx' //脚本路径
+    filename: "home", //文件名，
+    title: "后台管理系统-主页", // 标题
+    src: "./view/home/home.jsx", //脚本路径
   },
   {
-    filename: 'login', //文件名，
-    title: '后台管理系统-登陆', // 标题
-    src: './view/login/index.jsx' //登陆页面
+    filename: "login", //文件名，
+    title: "后台管理系统-登陆", // 标题
+    src: "./view/login/index.jsx", //登陆页面
   },
-  
-  
+  {
+    filename: "flex", //文件名，
+    title: "测试页面", // 标题
+    src: "./view/test/index.jsx", //登陆页面
+  },
+  {
+    filename: "device", //文件名，
+    title: "手机端布局", // 标题
+    src: "./view/device/index.jsx", //登陆页面
+  },
+  {
+    filename: "heart", //文件名，
+    title: "手机端布局", // 标题
+    src: "./view/device/heart.jsx", //登陆页面
+  },
+  {
+    filename: "refresh", //文件名，
+    title: "手机端布局", // 标题
+    src: "./view/device/refresh.jsx", //登陆页面
+  },
 ];
 
 module.exports = entry;
