@@ -12,12 +12,6 @@ let entry = [
     title: "后台管理系统", // 标题
     src: "./view/index/index.jsx", //脚本路径
   },
-
-  {
-    filename: "home", //文件名，
-    title: "后台管理系统-主页", // 标题
-    src: "./view/home/home.jsx", //脚本路径
-  },
   {
     filename: "login", //文件名，
     title: "后台管理系统-登陆", // 标题
@@ -42,6 +36,11 @@ let entry = [
     filename: "refresh", //文件名，
     title: "手机端布局", // 标题
     src: "./view/device/refresh.jsx", //登陆页面
+  },
+  {
+    filename: "prompt", //文件名，
+    title: "webUI", // 标题
+    src: "./view/webui/index.jsx", //登陆页面
   },
 ];
 

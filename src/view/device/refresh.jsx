@@ -10,6 +10,7 @@ function Refresh() {
       setShow("none");
     }, 5000);
   };
+
   return (
     <div>
       <Falling></Falling>
@@ -17,7 +18,7 @@ function Refresh() {
       <input
         type="button"
         value="提交"
-        style={{ margin: "0 0 0 50px" }}
+        style={{ margin: "0 0 0 200px" }}
         onClick={tijiao}
       ></input>
     </div>

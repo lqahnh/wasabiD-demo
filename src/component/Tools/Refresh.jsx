@@ -1,7 +1,7 @@
 import React from "react";
 import "./Refresh.css";
 function Refresh(props) {
-  console.log(props);
+  //   console.log(props);
   return (
     <div className="refresh" style={{ display: props.show }}>
       <div className="imagediv">
