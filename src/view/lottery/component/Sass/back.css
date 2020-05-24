@@ -1,0 +1,29 @@
+.wsb-back-contain {
+  float: left;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.wsb-back-title {
+  text-align: center;
+  color: #a5a5a5;
+  font-size: 14px;
+  height: 32px;
+}
+.wsb-back-title-span {
+  color: #6857ca;
+  font-size: 18px;
+}
+.wsb-back-balls {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 30px;
+  padding-inline-end: 5px;
+  border: 1px solid #e2f0fb;
+  background: #f6fbff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

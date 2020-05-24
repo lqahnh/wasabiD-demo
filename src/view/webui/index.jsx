@@ -12,7 +12,6 @@ function Index() {
   });
   const tanchukuang = () => {
     setDisplaystyle({ display: "block" });
-    // setButtonStyle({ display: "none" });
   };
   return (
     <div>

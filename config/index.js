@@ -42,6 +42,16 @@ let entry = [
     title: "webUI", // 标题
     src: "./view/webui/index.jsx", //登陆页面
   },
+  {
+    filename: "new", //文件名，
+    title: "webUI", // 标题
+    src: "./view/webui/new.jsx", //登陆页面
+  },
+  {
+    filename: "lottery", //文件名，
+    title: "彩票", // 标题
+    src: "./view/lottery/index.jsx", //登陆页面
+  },
 ];
 
 module.exports = entry;

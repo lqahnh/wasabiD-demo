@@ -6,11 +6,11 @@ function Refresh() {
   const [show, setShow] = useState("none");
   const tijiao = () => {
     setShow("block");
-    setTimeout(function () {
+    let timer = setTimeout(function () {
       setShow("none");
+      clearTimeout(timer);
     }, 5000);
   };
-
   return (
     <div>
       <Falling></Falling>
