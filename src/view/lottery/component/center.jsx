@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import "./Sass/center.css";
-import { randomArr, cmn } from "../../../component/libs/tool";
+import { randomArr, cmn, formatBallNum } from "../../../component/libs/tool";
 class Center extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isClick: false,
       selectedData: [],
     };
   }
   clearList = () => {
     this.setState({
       selectedData: [],
+      isClick: false,
     });
   };
   randomSelect = (count) => {
@@ -32,16 +34,19 @@ class Center extends Component {
     };
   };
   createOnehan = () => {
+    if (this.state.isClick) {
+      return;
+    }
     let backBalls = [];
     this.props.backBalls.map((value, index) => {
       if (value) {
-        backBalls.push(index);
+        backBalls.push(formatBallNum(index));
       }
     });
     let frontBalls = [];
     this.props.frontBalls.map((value, index) => {
       if (value) {
-        frontBalls.push(index);
+        frontBalls.push(formatBallNum(index));
       }
     });
     if (backBalls.length >= 2 && frontBalls.length >= 5) {
@@ -61,9 +66,9 @@ class Center extends Component {
           count++;
         }
       }
-
       this.setState({
         selectedData: [...this.state.selectedData, ...rsBalls],
+        isClick: true,
       });
     }
   };
